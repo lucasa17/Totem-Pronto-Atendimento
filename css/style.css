@@ -1,0 +1,159 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.container {
+  width: 90%;
+  max-width: 600px;
+  text-align: center;
+}
+
+h1 {
+  color: #0d3b66;
+  margin-bottom: 30px;
+}
+
+a{
+  text-decoration: none;
+  color: #0d3b66;
+}
+
+footer{
+  color: #b71c1c;
+  margin-top: 5%;
+  font-size: 18px;
+}
+
+.buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.btn {
+  padding: 25px;
+  font-size: 22px;
+  border-radius: 12px;
+  text-decoration: none;
+  text-align: center;
+  display: block;
+}
+
+.btn-primary {
+  background: #0d3b66;
+  color: white;
+}
+
+.btn-secondary {
+  background: #3da5d9;
+  color: white;
+}
+
+.btn-light {
+  background: #e6f2fb;
+  color: #0d3b66;
+}
+
+.cpf-display {
+  font-size: 28px;
+  padding: 15px;
+  border: 2px solid #0d3b66;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  letter-spacing: 3px;
+}
+
+.keyboard {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 15px;
+}
+
+.keyboard button {
+  padding: 20px;
+  font-size: 22px;
+  background: #3da5d9;
+  color: white;
+  border: none;
+  border-radius: 10px;
+}
+
+.feedback {
+  margin-top: 15px;
+  padding: 15px;
+  border-radius: 10px;
+  font-size: 16px;
+  display: none;
+}
+
+.feedback.erro {
+  font-size: 30px;
+  background: #fdecea;
+  color: #b71c1c;
+}
+
+.feedback.sucesso {
+  background: #e8f5e9;
+  color: #1b5e20;
+}
+
+.show {
+  display: block;
+}
+
+/* LOADING CENTRAL */
+.loading-screen {
+  display: none;
+  text-align: center;
+  margin-top: 30px;
+}
+
+.loading-screen.active {
+  display: block;
+}
+
+.spinner {
+  width: 50px;
+  height: 50px;
+  border: 5px solid #e6f2fb;
+  border-top: 5px solid #0d3b66;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+  margin: 0 auto 10px;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* FADE */
+.fade-in {
+  animation: fadeIn 0.5s ease-in;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+/* ÍCONES */
+.icon {
+  font-size: 40px;
+  margin-bottom: 10px;
+}
+
+.erro-icon {
+  color: #b71c1c;
+}
+
+.sucesso-icon {
+  color: #1b5e20;
+}

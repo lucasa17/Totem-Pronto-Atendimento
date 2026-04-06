@@ -1,0 +1,88 @@
+/* SENHA */
+.senha-box {
+  background: #e6f2fb;
+  padding: 30px;
+  border-radius: 15px;
+  margin-bottom: 20px;
+}
+
+.label {
+  font-size: 18px;
+  color: #0d3b66;
+}
+
+.senha-numero {
+  font-size: 60px;
+  font-weight: bold;
+  color: #0d3b66;
+  margin-top: 10px;
+}
+
+/* MENSAGEM */
+.mensagem {
+  font-size: 20px;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+/* LOADING */
+.loading {
+  margin-top: 20px;
+}
+
+.spinner {
+  width: 40px;
+  height: 40px;
+  border: 5px solid #e6f2fb;
+  border-top: 5px solid #0d3b66;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+  margin: 0 auto 10px;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* ANIMAÇÃO SENHA */
+.senha-numero {
+  font-size: 70px;
+  font-weight: bold;
+  color: #0d3b66;
+  margin-top: 10px;
+  opacity: 0;
+  transform: scale(0.5);
+}
+
+.senha-numero.show {
+  animation: popIn 0.4s ease forwards;
+}
+
+@keyframes popIn {
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+/* PRIORIDADE */
+.prioritario {
+  background: #fff3cd;
+  border: 2px solid #ff9800;
+}
+
+.prioritario .senha-numero {
+  color: #e65100;
+}
+
+/* NORMAL */
+.normal {
+  background: #e6f2fb;
+}
+
+/* TÍTULO */
+#titulo {
+  color: #0d3b66;
+}

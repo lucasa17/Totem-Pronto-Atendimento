@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Confirmação</title>
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="../css/confirmacao.css">
+</head>
+
+<body>
+
+<div class="container">
+    <div id="loading" class="loading-screen active">
+      <div class="spinner"></div>
+      <p>Buscando seus dados...</p>
+    </div>
+
+    <div id="conteudo" style="display: none;">
+      <h1>Confirme seus dados</h1>
+
+      <div class="info-box fade-in">
+        <p><strong>Nome:</strong> <span id="nome"></span></p>
+        <p><strong>Médico:</strong> <span id="medico"></span></p>
+        <p><strong>Horário:</strong> <span id="horario"></span></p>
+      </div>
+
+      <div class="actions backConf">
+        <button class="btn confirm" onclick="confirmarDados()">Confirmar</button>
+        <a href="cpf.html" class="btn back">Voltar</a>
+      </div>
+
+    </div>
+
+  <div id="mensagem" class="feedback erro"></div>
+</div>
+
+<script src="../js/confirmacao.js"></script>
+
+</body>
+</html>

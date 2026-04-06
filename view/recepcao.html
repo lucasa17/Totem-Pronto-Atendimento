@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Recepção</title>
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+
+<div class="container">
+  <h1>Selecione o tipo de atendimento</h1>
+
+  <div class="buttons">
+    <button class="btn btn-primary" onclick="gerarSenha('N')">
+        👤 Atendimento Normal
+        </br>
+        <small>Ordem padrão</small>
+    </button>
+
+    <button class="btn btn-secondary" onclick="gerarSenha('P')">
+        ♿ Atendimento Prioritário
+        </br>
+        <small>Idosos, gestantes, PCD</small>
+    </button>
+  </div>
+
+  <div id="loading" class="loading-screen">
+    <div class="spinner"></div>
+    <p>Gerando senha...</p>
+  </div>
+
+  <div id="resultado" style="display: none;">
+    <div class="senha-box fade-in">
+      <p class="label">Sua senha é:</p>
+      <div id="senha" class="senha-numero"></div>
+    </div>
+
+    <p class="mensagem">Aguarde ser chamado</p>
+  </div>
+
+  <div class="actions">
+    <a href="../index.html" class="btn back">Voltar</a>
+  </div>
+</div>
+
+<script src="../js/recepcao.js"></script>
+
+</body>
+</html>

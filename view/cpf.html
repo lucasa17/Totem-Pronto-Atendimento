@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>CPF</title>
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="../css/cpf.css">
+</head>
+
+<body>
+
+<div class="container">
+  <h1>Digite seu CPF</h1>
+
+  <div id="cpfDisplay" class="cpf-display">
+    ___.___.___-__
+  </div>
+
+  <div class="keyboard">
+    <button onclick="addNumber(1)">1</button>
+    <button onclick="addNumber(2)">2</button>
+    <button onclick="addNumber(3)">3</button>
+    <button onclick="addNumber(4)">4</button>
+    <button onclick="addNumber(5)">5</button>
+    <button onclick="addNumber(6)">6</button>
+    <button onclick="addNumber(7)">7</button>
+    <button onclick="addNumber(8)">8</button>
+    <button onclick="addNumber(9)">9</button>
+    <button onclick="clearCPF()">C</button>
+    <button onclick="addNumber(0)">0</button>
+    <button onclick="deleteLast()">←</button>
+  </div>
+
+  <div class="actions">
+    <a href="../index.html" class="btn back">Voltar</a>
+    <button class="btn confirm" onclick="confirmCPF()">Confirmar</button>
+  </div>
+
+  <div id="mensagem" class="feedback erro"></div>
+</div>
+
+<script src="../js/cpf.js"></script>
+
+</body>
+</html>

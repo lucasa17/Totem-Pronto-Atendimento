@@ -1,0 +1,18 @@
+.actions {
+  margin-top: 20px;
+  display: flex;
+  gap: 10px;
+}
+
+.actions .btn {
+  flex: 1;
+}
+
+.back {
+  background: #ccc;
+}
+
+.confirm {
+  background: #0d3b66;
+  color: white;
+}

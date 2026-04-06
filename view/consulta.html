@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Consulta de Especialidades</title>
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="../css/consulta.css">
+</head>
+
+<body>
+
+<div class="container">
+
+  <h1>Consultar Especialidades</h1>
+
+  <select id="especialidade" onchange="carregarAgenda()" class="select">
+    <option value="">Selecione uma especialidade</option>
+    <option value="cardio">Cardiologia</option>
+    <option value="dermato">Dermatologia</option>
+    <option value="ortopedia">Ortopedia</option>
+  </select>
+
+  <div id="calendario" class="calendario"></div>
+
+  <div id="detalhes" class="info-box" style="display:none;"></div>
+
+  <div class="actions">
+    <a href="../index.html" class="btn back">Voltar</a>
+  </div>
+
+</div>
+
+<script src="../js/consulta.js"></script>
+
+</body>
+</html>
