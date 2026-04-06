@@ -15,22 +15,11 @@ function mostrarErro(msg) {
   const el = document.getElementById("mensagem");
 
   el.innerHTML = `
-    <div class="icon erro-icon">⚠️</div>
-    ${msg}
+    <div class="icon erro-icon"></div>
+    <span>${msg}</span>
   `;
 
-  el.classList.add("show");
-}
-
-function mostrarErro(msg) {
-  const el = document.getElementById("mensagem");
-
-  el.innerHTML = `
-    <div class="icon erro-icon">⚠️</div>
-    ${msg}
-  `;
-
-  el.classList.add("show");
+  el.className = "mensagem-box erro show";
 }
 
 const conteudo = document.getElementById("conteudo");
@@ -49,7 +38,7 @@ setTimeout(() => {
     conteudo.classList.add("fade-in");
 
   } else {
-    mostrarErro("Agendamento não encontrado!</br>Tente novamente");
+    mostrarErro("Agendamento não encontrado!<br>Tente novamente");
 
     setTimeout(() => {
       window.location.href = "../view/cpf.html";

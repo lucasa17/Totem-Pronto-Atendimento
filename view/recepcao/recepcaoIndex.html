@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Painel da Recepção</title>
+  <link rel="stylesheet" href="../../css/style.css">
+  <link rel="stylesheet" href="../../css/recepcao/recepcaoIndex.css">
+</head>
+
+<body>
+
+<div class="container">
+
+  <h1>Painel da Recepção</h1>
+  <div id="mensagem" class="mensagem-box"></div>
+
+  <div class="painel-box">
+    <p>Chamando:</p>
+    <div id="senhaAtual" class="senha-grande">---</div>
+  </div>
+
+  <div class="actions prox">
+    <button onclick="chamarProximo()" class="btn">Chamar Próximo</button>
+    <button onclick="limparFila()" class="btn back">Limpar Histórico</button>
+  </div>
+
+  <h2>Fila de Atendimento</h2>
+  <ul id="fila" class="lista"></ul>
+
+  <h2>Últimos Chamados</h2>
+  <ul id="historico" class="lista"></ul>
+
+</div>
+
+<script src="../../js/recepcao/recepcaoIndex.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,58 @@
+.painel-box {
+  background: #e6f2fb;
+  padding: 20px;
+  border-radius: 15px;
+  margin-bottom: 20px;
+}
+
+.senha-grande {
+  font-size: 60px;
+  font-weight: bold;
+  color: #0d3b66;
+}
+
+.lista {
+  list-style: none;
+  padding: 0;
+}
+
+.lista li {
+  background: #f1f9ff;
+  margin-bottom: 8px;
+  padding: 10px;
+  border-radius: 8px;
+}
+
+.mensagem-box {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.mensagem-box::before {
+  font-size: 18px;
+}
+
+.erro::before {
+  content: "✖";
+}
+
+.sucesso::before {
+  content: "✔";
+}
+
+.sucesso {
+  background: #d4edda;
+  color: #155724;
+}
+
+.erro {
+  background: #f8d7da;
+  color: #721c24;
+}
+
+.prox{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}

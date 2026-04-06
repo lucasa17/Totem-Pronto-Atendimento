@@ -18,14 +18,12 @@
   margin-top: 10px;
 }
 
-/* MENSAGEM */
 .mensagem {
   font-size: 20px;
   color: #333;
   margin-bottom: 20px;
 }
 
-/* LOADING */
 .loading {
   margin-top: 20px;
 }
@@ -46,7 +44,6 @@
   }
 }
 
-/* ANIMAÇÃO SENHA */
 .senha-numero {
   font-size: 70px;
   font-weight: bold;
@@ -67,7 +64,6 @@
   }
 }
 
-/* PRIORIDADE */
 .prioritario {
   background: #fff3cd;
   border: 2px solid #ff9800;
@@ -77,12 +73,10 @@
   color: #e65100;
 }
 
-/* NORMAL */
 .normal {
   background: #e6f2fb;
 }
 
-/* TÍTULO */
 #titulo {
   color: #0d3b66;
 }

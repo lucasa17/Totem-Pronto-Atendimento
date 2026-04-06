@@ -107,7 +107,6 @@ footer{
   display: block;
 }
 
-/* LOADING CENTRAL */
 .loading-screen {
   display: none;
   text-align: center;
@@ -134,7 +133,6 @@ footer{
   }
 }
 
-/* FADE */
 .fade-in {
   animation: fadeIn 0.5s ease-in;
 }
@@ -144,7 +142,6 @@ footer{
   to { opacity: 1; }
 }
 
-/* ÍCONES */
 .icon {
   font-size: 40px;
   margin-bottom: 10px;
