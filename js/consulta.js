@@ -43,22 +43,10 @@ function carregarAgenda() {
     dia.appendChild(numero);
     dia.appendChild(info);
 
-    if (agenda[esp][i]) {
-      dia.classList.add("disponivel");
-
-      dia.onclick = () => {
-
-        if (diaSelecionado) {
-          diaSelecionado.classList.remove("ativo");
-        }
-
-        dia.classList.add("ativo");
-        diaSelecionado = dia;
-
-        // coloca info dentro
-        info.innerHTML = agenda[esp][i];
-      };
-    }
+if (agenda[esp][i]) {
+  dia.classList.add("disponivel");
+  info.innerHTML = agenda[esp][i];
+}
 
     calendarioEl.appendChild(dia);
   }

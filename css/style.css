@@ -127,6 +127,27 @@ footer{
   margin: 0 auto 10px;
 }
 
+
+.btn.back {
+  margin-top: 20px;
+  background: linear-gradient(135deg, #0d3b66, #145da0);
+  color: white;
+  padding: 12px 28px;
+  border-radius: 50px;
+  text-decoration: none;
+  font-weight: bold;
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  transition: 0.25s ease;
+  box-shadow: 0 6px 15px rgba(0,0,0,0.2);
+}
+
+.btn.back:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.25);
+}
+
 @keyframes spin {
   to {
     transform: rotate(360deg);
